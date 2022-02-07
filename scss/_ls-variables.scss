@@ -1,0 +1,110 @@
+// Couleurs de la charte graphique Les Scouts
+
+$ls-vert-base: rgb(149, 193, 31);
+$ls-vert-fonce: rgb(48, 74, 60);
+$ls-bleu-fonce: rgb(10, 66, 117);
+$ls-prune: rgb(78, 29, 79);
+$ls-orange: rgb(239, 123, 0);
+$ls-gris: rgb(128, 154, 175);
+$ls-turquoise: rgb(43, 153, 164);
+$ls-bleu-clair: rgb(21, 173, 234);
+$ls-rouge: rgb(214, 15, 60);
+$ls-rose: rgb(224, 63, 123);
+$ls-baladins: rgb(0, 160, 222);
+$ls-louveteaux: rgb(41, 111, 82);
+$ls-eclaireurs: rgb(0, 79, 159);
+$ls-pionniers: rgb(213, 19, 23);
+$ls-mondial: rgb(98, 37, 153);
+$ls-blanc: rgb(255, 255, 255);
+$ls-noir: rgb(0, 0, 0);
+
+// Couleurs de base
+$body-bg: rgb(242, 245, 248);
+
+$primary: $ls-bleu-fonce;
+
+// Polices de base 
+$font-family-base: Muli, sans-serif;
+$font-family-sans-serif : Muli, sans-serif;
+
+$body-color: $ls-bleu-fonce;
+$headings-color: $ls-bleu-fonce;
+
+$theme-colors: (
+    "primary": $ls-bleu-fonce,
+    "secondary": $ls-vert-fonce,
+    "danger": $ls-rouge,
+    "warning": $ls-orange,
+    "info": $ls-turquoise,
+    "success": $ls-vert-base,
+    "light": $ls-blanc,
+    "dark": $ls-bleu-fonce,
+    "ls-vert-base": $ls-vert-base,
+    "ls-vert-fonce": $ls-vert-fonce,
+    "ls-bleu-fonce": $ls-bleu-fonce,
+    "ls-prune": $ls-prune,
+    "ls-orange": $ls-orange,
+    "ls-gris": $ls-gris,
+    "ls-turquoise": $ls-turquoise,
+    "ls-bleu-clair": $ls-bleu-clair,
+    "ls-rouge": $ls-rouge,
+    "ls-rose": $ls-rose,
+    "ls-baladins": $ls-baladins,
+    "ls-louveteaux": $ls-louveteaux,
+    "ls-eclaireurs": $ls-eclaireurs,
+    "ls-pionniers": $ls-pionniers,
+    "ls-mondial": $ls-mondial,
+    "ls-blanc": $ls-blanc,
+    "ls-noir": $ls-noir,
+);
+
+$green: $ls-vert-base;
+$red: $ls-rouge;
+$blue: $ls-bleu-fonce;
+$purple: $ls-prune;
+$pink: $ls-rose;
+$orange: $ls-orange;
+$teal: $ls-turquoise;
+
+$alert-bg-level:                    -7 !default;
+$alert-border-level:                -4 !default;
+$alert-color-level:                 6 !default;
+
+// Chemins vers les fichiers
+$path-toppings: "../images/toppings/";
+
+// [nom-raccourci] [nom-complet] [nom-fichier-couleur] [nom-fichier-blanc] [largeur] [hauteur] [nom-fichier-couleur-large] [nom-fichier-blanc-large]
+$topping-images: 
+  "f" "federation" "topping_Federation_vert.png" "topping_Federation_blanc.png" 200px 184px "topping_Federation_vert_400.png" "topping_Federation_blanc_400.png" 400px 369px,
+  "b" "baladins" "topping_Baladins_bleu.png" "topping_Baladins_blanc.png" 200px 183px "topping_Baladins_bleu_400.png" "topping_Baladins_blanc_400.png" 400px 366px,
+  "l" "louveteaux" "topping_Louveteaux_vert.png" "topping_Louveteaux_blanc.png" 200px 197px "topping_Louveteaux_vert_400.png" "topping_Louveteaux_blanc_400.png" 400px 395px,
+  "e" "eclaireurs" "topping_Eclaireurs_bleu.png" "topping_Eclaireurs_blanc.png" 200px 207px "topping_Eclaireurs_bleu_400.png" "topping_Eclaireurs_blanc_400.png" 400px 415px,
+  "p" "pionniers" "topping_Pionniers_rouge.png" "topping_Pionniers_blanc.png" 200px 196px "topping_Pionniers_rouge_400.png" "topping_Pionniers_blanc_400.png" 400px 391px;
+
+$topping-vertical-positions:
+  "before",
+  "top",
+  "middle",
+  "bottom",
+  "after";
+
+$topping-horizontal-positions:
+  "left-edge",
+  "outside-left",
+  "inside-left",
+  "inside-right",
+  "outside-right",
+  "right-edge"
+;
+
+$pourcentages: (
+  "10": 10%,
+  "20": 20%,
+  "30": 30%,
+  "40": 40%,
+  "50": 50%,
+  "60": 60%,
+  "70": 70%,
+  "80": 80%,
+  "90": 90%,
+);

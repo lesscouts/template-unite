@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemple de formulaire d’inscription</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/base.css" rel="stylesheet">
+
+    <!-- Ici, on inclut les icônes de Bootstrap depuis un CDN mais tu peux tout à fait les inclure depuis une autre source -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row bg-ls-vert-fonce">
+                <div class="col">
+                    <div class="m-2">
+                        <a href="https://lesscouts.be/" target="_blank" title="Aller sur le site de la fédération Les Scouts">
+                            <i class="bi-chevron-left"></i> Les Scouts asbl
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light float-r">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">
+                            <img src="../images/logos/logo_Federation_couleur_baseline_562x236.png" alt="Logo Les Scouts asbl" width="281" height="118">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Basculer le menu">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="menu-principal">
+                            <ul class="navbar-nav me-2 mb-2 mb-lg-0 fw-bold">
+                                <li class="nav-item px-lg-3">
+                                    <a class="nav-link text-primary" aria-current="page" href="index.html">À propos</a>
+                                </li>
+                                <li class="nav-item px-lg-3">
+                                    <a class="nav-link text-primary" aria-current="page" href="inscription.html">Inscription</a>
+                                </li>
+                                <li class="nav-item px-lg-3">
+                                    <a class="nav-link text-primary" href="contact.html">Contact</a>
+                                </li>
+                                <li class="nav-item px-lg-3 dropdown">
+                                    <a class="nav-link text-primary dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Sections
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Baladins</a></li>
+                                        <li><a class="dropdown-item" href="#">Louveteaux</a></li>
+                                        <li><a class="dropdown-item" href="#">Éclaireurs</a></li>
+                                        <li><a class="dropdown-item" href="#">Pionniers</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item px-lg-3">
+                                    <a class="nav-link text-primary" href="#">Autre lien</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <article>
+        <div class="bg-ls-bleu-clair bg-topping-federation topping-white bg-topping-opacity-10">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-11 offset-md-1 pb-5 mt-5">
+                        <h1 class="mb-4 mt-5">Demande d’inscription</h1>
+                        <div class="pb-5">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci alias dolor dolore, 
+                                ea eos esse id magni possimus quod ullam, vel voluptatum? Eos error officiis praesentium qui quo repellat ?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mb-5">
+            <div class="row mt-5 mb-2">
+                <div class="col">
+                    <div class="mb-3 p-2 bg-warning">
+                        <div class="float-start"><i class="bi-exclamation-triangle-fill display-6 px-2"></i></div>
+                        <p>Le formulaire ci-dessous est juste un <strong>exemple des champs utiles</strong>
+                            pour un formulaire de demande d’inscription. <br>
+                            À toi de jouer pour donner vie au formulaire et récupérer les données soumises par les utilisateurs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12 topping-federation topping-top topping-right topping-large  mb-5">
+                    <div class="above-topping">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <fieldset id="scout">
+                                        <legend class="fw-bold">Informations de votre enfant</legend>
+                                        <div class="mb-3">
+                                            <label for="scout-nom" class="form-label">Nom de famille</label>
+                                            <input type="text" class="form-control" id="scout-nom">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="scout-prenom" class="form-label">Prénom</label>
+                                            <input type="text" class="form-control" id="scout-prenom">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="scout-date-naissance" class="form-label">Date de naissance</label>
+                                            <input type="date" class="form-select" id="scout-date-naissance" placeholder="jj/mm/aaaa">
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="form-label">Genre</div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="genre" id="genre-f">
+                                                <label for="genre-f" class="form-check-label">F</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="genre" id="genre-h">
+                                                <label for="genre-h" class="form-check-label">H</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="genre" id="genre-x">
+                                                <label for="genre-x" class="form-check-label">X</label>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="cotisation" class="form-label">Type de cotisation</label>
+                                            <select name="cotisation" id="cotisation" class="form-select" aria-describedby="cotisation-help">
+                                                <option value="Normale" selected>Normale (solo)</option>
+                                                <option value="Couple">Couple (2 personnes)</option>
+                                                <option value="Familiale">Familiale (3 personnes ou plus)</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="fonction" class="form-label">Fonction</label>
+                                            <select name="fonction" id="fonction" class="form-select" aria-describedby="fonction-help">
+                                                <option value="Scout">Scout</option>
+                                                <option value="Animateur">Animateur</option>
+                                                <option value="Animateur responsable">Animateur responsable</option>
+                                                <option value="Intendant">Intendant</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="section" class="form-label">Section</label>
+                                            <select name="section" id="section" class="form-select" aria-describedby="section-help">
+                                                <option value="Baladins">Baladins</option>
+                                                <option value="Louveteaux">Louveteaux</option>
+                                                <option value="Éclaireurs">Éclaireurs</option>
+                                                <option value="Pionniers">Pionniers</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Adresse email de votre enfant</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text" id="email-prefix"><i class="bi-envelope"></i></span>
+                                                <input type="email" class="form-control" id="email" aria-describedby="email-scout-help">
+                                            </div>
+                                            <div id="email-scout-help" class="form-text">N’indiquez une adresse email ici que si votre enfant a sa propre adresse email</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="scout-adresse" class="form-label">Adresse postale</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text" id="scout-adresse-prefix"><i class="bi-house"></i></span>
+                                                <input type="text" class="form-control" id="scout-adresse">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="scout-gsm" class="form-label">GSM</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text" id="scout-gsm-prefix"><i class="bi-telephone"></i></span>
+                                                <input type="tel" class="form-control" id="scout-gsm">
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <fieldset id="parent-1">
+                                        <legend class="fw-bold">Informations du premier tuteur légal</legend>
+                                        <div class="mb-3">
+                                            <label for="parent-1-nom" class="form-label">Nom de famille</label>
+                                            <input type="text" class="form-control" id="parent-1-nom">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="parent-1-prenom" class="form-label">Prénom</label>
+                                            <input type="text" class="form-control" id="parent-1-prenom">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="parent-1-email" class="form-label">Adresse email</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text" id="parent-1-email-prefix"><i class="bi-envelope"></i></span>
+                                                <input type="email" class="form-control" id="parent-1-email">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="parent-1-adresse-1" class="form-label">Adresse postale</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text" id="parent-1-adresse-prefix"><i class="bi-house"></i></span>
+                                                <input type="text" class="form-control" name="parent-1-adresse-1" id="parent-1-adresse-1" aria-describedby="parent-1-adresse-1-help">
+                                            </div>
+                                            <div id="parent-1-adresse-1-help" class="form-text">Uniquement si différente</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="parent-1-adresse-2" class="form-label">Adresse postale 2</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text" id="parent-1-adresse-2-prefix"><i class="bi-house"></i></span>
+                                                <input type="text" class="form-control" name="parent-1-adresse-2" id="parent-1-adresse-2" aria-describedby="parent-1-adresse-2-help">
+                                            </div>
+                                            <div id="parent-1-adresse-2-help" class="form-text">Uniquement si différente</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="parent-1-gsm" class="form-label">GSM</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text" id="parent-1-gsm-prefix"><i class="bi-telephone"></i></span>
+                                                <input type="tel" class="form-control" id="parent-1-gsm">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="form-label">Lien de parenté</div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="genre" id="parent-1-parente-pere">
+                                                <label for="parent-1-parente-pere" class="form-check-label">Père</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="genre" id="parent-1-parente-mere">
+                                                <label for="parent-1-parente-mere" class="form-check-label">Mère</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="genre" id="parent-1-parente-tuteur">
+                                                <label for="parent-1-parente-tuteur" class="form-check-label">Tuteur</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="genre" id="parent-1-parente-autre">
+                                                <label for="parent-1-parente-autre" class="form-check-label">Autre</label>
+                                            </div>
+                                        </div>
+
+                                    </fieldset>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <fieldset id="parent-2">
+                                        <legend class="fw-bold">Informations du second tuteur légal</legend>
+                                        <div class="mb-3">
+                                            <label for="parent-2-nom" class="form-label">Nom de famille</label>
+                                            <input type="text" class="form-control" id="parent-2-nom">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="parent-2-prenom" class="form-label">Prénom</label>
+                                            <input type="text" class="form-control" id="parent-2-prenom">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="parent-2-email" class="form-label">Adresse email</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text" id="parent-2-email-prefix"><i class="bi-envelope"></i></span>
+                                                <input type="email" class="form-control" id="parent-2-email">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="parent-2-adresse-1" class="form-label">Adresse postale</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text" id="parent-2-adresse-prefix"><i class="bi-house"></i></span>
+                                                <input type="text" class="form-control" name="parent-1-adresse-1" id="parent-2-adresse-1" aria-describedby="parent-2-adresse-1-help">
+                                            </div>
+                                            <div id="parent-2-adresse-1-help" class="form-text">Uniquement si différente</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="parent-2-adresse-2" class="form-label">Adresse postale 2</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text" id="parent-2-adresse-2-prefix"><i class="bi-house"></i></span>
+                                                <input type="text" class="form-control" name="parent-2-adresse-2" id="parent-2-adresse-2" aria-describedby="parent-2-adresse-2-help">
+                                            </div>
+                                            <div id="parent-2-adresse-2-help" class="form-text">Uniquement si différente</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="parent-2-gsm" class="form-label">GSM</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text" id="parent-2-gsm-prefix"><i class="bi-telephone"></i></span>
+                                                <input type="tel" class="form-control" id="parent-2-gsm">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="form-label">Lien de parenté</div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="genre" id="parent-2-parente-pere">
+                                                <label for="parent-2-parente-pere" class="form-check-label">Père</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="genre" id="parent-2-parente-mere">
+                                                <label for="parent-2-parente-mere" class="form-check-label">Mère</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="genre" id="parent-2-parente-tuteur">
+                                                <label for="parent-2-parente-tuteur" class="form-check-label">Tuteur</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="genre" id="parent-2-parente-autre">
+                                                <label for="parent-2-parente-autre" class="form-check-label">Autre</label>
+                                            </div>
+                                        </div>
+
+                                    </fieldset>
+                                </div>
+                                
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mb-3 p-3 bg-ls-vert-base">
+                                        <div class="form-label">
+                                            <p class="pb-2">
+                                                <i class="float-start display-6 bi-shield-exclamation me-3"></i>
+                                                <strong>Liste d’attente éventuelle</strong> <br> 
+                                                Le nombre de personnes souhaitant s’inscrire dans l’unité peut excéder le nombre de places disponibles.
+                                                L’unité doit alors mettre en place une liste d’attente.
+                                            </p>
+                                            <p>Afin de vous permettre de vivre le scoutisme :</p> 
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="liste-attente-transfert" id="liste-attente-transfert-ok" value="Oui">
+                                            <label for="liste-attente-transfert-ok" class="form-check-label">
+                                                J’accepte que l’unité transmette nos coordonnées à une autre unité de la fédération Les Scouts ou à la fédération elle-même.
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="liste-attente-transfert" id="liste-attente-transfert-non" value="Non">
+                                            <label for="liste-attente-transfert-non" class="form-check-label">
+                                                Je n’accepte pas que l’unité transmette nos coordonnées à une autre unité de la fédération Les Scouts ou à la fédération elle-même.
+                                                Je reste donc sur la liste d’attente de l’unité.
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" name="accord-rgpd" id="accord-rgpd">
+                                        <label class="form-check-label" for="accord-rgpd">J’ai lu et j’accepte la <a href="https://lesscouts.be/vie-privee/" target="_blank">charte de protection des données personnelles de la fédération</a></label>
+                                    </div>
+
+                                    
+                                    
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block">Envoyer la demande d’inscription</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-2 mb-5">
+                <div class="col-md-12">
+                </div>
+            </div>
+            
+        </div>
+    </article>
+    <footer class="mt-5">
+        <div class="bg-primary py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">L’unité fictive Sainte-Anne est membre de <a href="https://lesscouts.be/">Les Scouts ASBL</a></p>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://lesscouts.be/">
+                            <img src="../images/logos/logo_Federation_blanc_159x61.png" alt="Les Scouts asbl" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        Un peu de texte
+                    </div>
+                    <div class="col-md-3">
+                        Et ici aussi
+                    </div>
+                    <div class="col-md-3">
+                        Et pourquoi pas ceci encore
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col py-3">
+                    <p class="text-center text-ls-gris">
+                        &copy; Les Scouts asbl −
+                        <a href="https://lesscouts.be/mentions-legales/">Mentions légales</a> -
+                        <a href="https://lesscouts.be/vie-privee/">Vie privée</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Ici, on inclut le Javascript de Bootstrap depuis un CDN mais tu peux tout à fait l’inclure depuis une autre source -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,330 @@
+@use "sass:math";
+
+@import "ls-variables";
+@import "ls-fonts";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+//
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 700;
+}
+
+    // Fonds de couleurs Les Scouts
+
+.bg-primary,
+.bg-secondary,
+.bg-success,
+.bg-danger,
+.bg-warning,
+.bg-info,
+.bg-dark,
+.bg-ls-vert-base,
+.bg-ls-vert-fonce,
+.bg-ls-bleu-fonce,
+.bg-ls-prune,
+.bg-ls-orange,
+.bg-ls-gris,
+.bg-ls-turquoise,
+.bg-ls-bleu-clair,
+.bg-ls-rouge,
+.bg-ls-rose,
+.bg-ls-baladins,
+.bg-ls-louveteaux,
+.bg-ls-eclaireurs,
+.bg-ls-pionniers,
+.bg-ls-mondial,
+{
+    color: #FFFFFF;
+    
+    & * {
+        color: #FFFFFF;
+    }
+}
+
+.bg-success,
+.bg-danger,
+.bg-info,
+.bg-warning,
+.bg-ls-vert-base,
+.bg-ls-orange,
+.bg-ls-gris,
+.bg-ls-turquoise,
+.bg-ls-bleu-clair,
+.bg-ls-rouge,
+.bg-ls-rose
+{
+    & a {
+        color: $primary;
+    }
+}
+
+.bg-primary,
+.bg-secondary,
+.bg-dark,
+.bg-ls-vert-fonce,
+.bg-ls-bleu-fonce,
+.bg-ls-prune,
+.bg-ls-louveteaux,
+.bg-ls-eclaireurs,
+.bg-ls-mondial {
+    & a {
+        color: $ls-blanc; 
+    }
+    
+    & a:hover  {
+        color: $ls-bleu-clair;
+    }
+}
+
+.bg-ls-pionniers {
+    & a,
+    & a:hover {
+        color: black;
+    }
+}
+
+.bg-ls-blanc {
+    color: $primary;
+}
+
+.form-control, .form-select, .form-check-input {
+    background-color: $ls-blanc;
+}
+
+.btn-success,
+.btn-ls-vert-base,
+.bg-success,
+.badge-success {
+    color: #FFFFFF;
+}
+
+// Fonds décorés
+
+//@each $color-name, $color-value in $theme-colors {
+//    .bg-#{$color-name} {
+//        position: relative;
+//        background: #{$color-value};
+//
+//    }
+//
+//}
+
+@each $shortcut, $name, $file-path-color, $file-path-white, $img-width, $img-height, $file-path-color-large, $file-path-white-large, $img-width-large, $img-height-large in $topping-images {
+    .bg-topping-#{$name}, .bg-topping-#{$shortcut} {
+        position: relative;
+    }
+    
+    .bg-topping-#{$name}, .bg-topping-#{$shortcut} {
+        &::before {
+            content: ' ';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+            background-image: url(#{$path-toppings}#{$file-path-white});
+        }
+        &.bg-topping-large::before {
+            background-image: url(#{$path-toppings}#{$file-path-white-large});
+            // test
+        }
+    }
+
+}
+
+.bg-topping {
+    position: relative;
+}
+
+.bg-topping-left::before {
+    background-position-x: left;
+    background-repeat: repeat-y;
+}
+
+.bg-topping-right::before {
+    background-position-x: right;
+    background-repeat: repeat-y;
+}
+
+.bg-topping-top::before {
+    background-position-y: top;
+    background-repeat: repeat-x;
+}
+
+.bg-topping-bottom::before {
+    background-position-y: bottom;
+    background-repeat: repeat-x;
+}
+
+@each $name, $value in $pourcentages {
+    .bg-topping-opacity-#{$name}::before {
+        opacity: #{$value};
+    }
+    
+}
+
+.bg-content {
+    position: relative;
+}
+
+//todo Barre de navigation
+
+// Toppings
+
+@each $shortcut, $name, $file-path-color, $file-path-white, $img-width, $img-height, $file-path-color-large, $file-path-white-large, $img-width-large, $img-height-large in $topping-images {
+    .topping-#{$shortcut}, .topping-#{$name} {
+        
+        position: relative;
+        
+        &::before {
+            content: url("#{$path-toppings}#{$file-path-color}");
+            position: absolute;
+        }
+        
+        &.topping-large::before {
+            content: url("#{$path-toppings}#{$file-path-color-large}");
+            position: absolute;
+        }
+        
+        &.topping-white {
+            &::before {
+                content: url("#{$path-toppings}#{$file-path-white}");
+                position: absolute;
+            }
+            
+            &.topping-large::before {
+                content: url("#{$path-toppings}#{$file-path-white-large}");
+                position: absolute;
+            }
+        }
+        
+        /* Positions verticales */
+        
+        &.topping-before {
+            &::before {
+                top: subtract(-20px, $img-height);
+            }
+            &.topping-large::before {
+                top: subtract(-20px, $img-height-large);
+            }
+        }   
+        
+        &.topping-top-overflow {
+            &::before {
+                top: subtract(0px, floor(math.div($img-height, 2)));
+            }
+            &.topping-large::before {
+                top: subtract(0px, floor(math.div($img-height-large, 2)));
+            }
+        }
+        
+        &.topping-top {
+            &::before {
+                top: 0;
+            }
+        }
+        
+        &.topping-middle {
+            &::before {
+                top: 50%;
+                margin-top: subtract(0px, floor(math.div($img-height, 2)));
+            }
+            &.topping-large::before {
+                top: 50%;
+                margin-top: subtract(0px, floor(math.div($img-height-large, 2)));
+            }
+        }
+        
+        &.topping-bottom {
+            &::before {
+                bottom: 0;
+            }
+        }
+        
+        &.topping-bottom-overflow {
+            &::before {
+                bottom: subtract(0px, floor(math.div($img-height, 2)));
+            }
+            &.topping-large::before {
+                bottom: subtract(0px, floor(math.div($img-height-large, 2)));
+            }
+        }
+        
+        &.topping-after {
+            &::before {
+                bottom: subtract(-20px, $img-height);
+            }
+            &.topping-large::before {
+                bottom: subtract(-20px, $img-height-large);
+            }
+        }
+        
+        /* Positions horizontales */
+
+        &.topping-left-outside {
+            &::before {
+                left: subtract(-20px, $img-width);
+            }
+            &.topping-large::before {
+                left: subtract(-20px, $img-width-large);
+            }
+        }
+        
+        &.topping-left-overflow {
+            &::before {
+                left: subtract(0px, floor(math.div($img-width, 2)));
+            }
+            &.topping-large::before {
+                left: subtract(0px, floor(math.div($img-width-large, 2)));
+            }
+        }
+        
+        &.topping-left {
+            &::before {
+                left: 0;
+            }
+        }
+        
+        &.topping-right {
+            &::before {
+                right: 0;
+            }
+        }
+        
+        &.topping-right-overflow {
+            &::before {
+                right: subtract(0px, floor(math.div($img-width, 2)));
+            }
+            &.topping-large::before {
+                right: subtract(0px, floor(math.div($img-width-large, 2)));
+            }
+        }
+        
+        &.topping-right-outside {
+            &::before {
+                right: subtract(-20px, $img-width);
+            }
+            &.topping-large::before {
+                right: subtract(-20px, $img-width-large);
+            }
+        }
+        
+    }
+    
+}
+
+.above-topping {
+    position: relative;
+    z-index: 5;
+    //overflow-wrap: break-word;
+}
+
+//todo Titraille
+
+//todo Pavés
+
+//todo Pied de page
+

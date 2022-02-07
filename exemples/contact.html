@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemple de formulaire de contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/base.css" rel="stylesheet">
+
+    <!-- Ici, on inclut les icônes de Bootstrap depuis un CDN mais tu peux tout à fait les inclure depuis une autre source -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row bg-ls-vert-fonce">
+                <div class="col">
+                    <div class="m-2">
+                        <a href="https://lesscouts.be/" target="_blank" title="Aller sur le site de la fédération Les Scouts">
+                            <i class="bi-chevron-left"></i> Les Scouts asbl
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light float-r">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">
+                            <img src="../images/logos/logo_Federation_couleur_baseline_562x236.png" alt="Logo Les Scouts asbl" width="281" height="118">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Basculer le menu">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="menu-principal">
+                            <ul class="navbar-nav me-2 mb-2 mb-lg-0 fw-bold">
+                                <li class="nav-item px-lg-3">
+                                    <a class="nav-link text-primary" aria-current="page" href="index.html">À propos</a>
+                                </li>
+                                <li class="nav-item px-lg-3">
+                                    <a class="nav-link text-primary" aria-current="page" href="inscription.html">Inscription</a>
+                                </li>
+                                <li class="nav-item px-lg-3">
+                                    <a class="nav-link text-primary" href="contact.html">Contact</a>
+                                </li>
+                                <li class="nav-item px-lg-3 dropdown">
+                                    <a class="nav-link text-primary dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Sections
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Baladins</a></li>
+                                        <li><a class="dropdown-item" href="#">Louveteaux</a></li>
+                                        <li><a class="dropdown-item" href="#">Éclaireurs</a></li>
+                                        <li><a class="dropdown-item" href="#">Pionniers</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item px-lg-3">
+                                    <a class="nav-link text-primary" href="#">Autre lien</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <article>
+        <div class="bg-ls-vert-base">
+            <div class="container">
+                <div class="row topping-federation topping-white topping-bottom-overflow topping-right topping-large">
+                    <div class="col-11 offset-md-1 pb-5 mt-5">
+                        <h1 class="mb-4 mt-5">Contactez-nous</h1>
+                        <div class="pb-5">
+                            <p>Pour nous contacter, veuillez remplir le formulaire ci-dessous. <br>
+                                Nous reviendrons vers vous très prochainement.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mb-5">
+            <div class="row mt-5">
+                <div class="col-md-6 offset-md-1 topping-federation topping-white topping-middle topping-left-outside topping-large  mb-5">
+                    <div class="above-topping">
+                        <div class="mb-3 p-2 bg-warning">
+                            <div class="float-start"><i class="bi-exclamation-triangle-fill display-6 px-2"></i></div>
+                            <p>Le formulaire ci-dessous est juste un <strong>exemple des champs utiles</strong>
+                                pour un formulaire de contact. <br>
+                                À toi de jouer pour donner vie au formulaire et récupérer les données soumises par les utilisateurs.</p>
+                        </div>
+
+                        <h2>Formulaire de contact</h2>
+                        
+                        <p>Voulez-vous inscrire votre enfant ? Complétez une <a href="inscription.html">demande d’inscription</a>.
+                            <br>Pour toute autre demande, utilisez le formulaire ci-dessous.</p>
+
+                        <form>
+                            <div class="mb-3">
+                                <label for="nom" class="form-label">Votre nom complet</label>
+                                <input type="text" class="form-control" id="nom">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Votre adresse email</label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="email-prefix"><i class="bi-envelope"></i></span>
+                                    <input type="email" class="form-control" id="email" aria-describedby="email-prefix">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="destinataire" class="form-label">Qui voulez-vous contacter ?</label>
+                                <select name="destinataire" id="destinataire" class="form-select" aria-describedby="destinataire-help">
+                                    <option value="Unité" selected>L’animateur d’unité</option>
+                                    <option value="Baladins">Le staff Baladins</option>
+                                    <option value="Louveteaux">Le staff Louveteaux</option>
+                                    <option value="Éclaireurs">Le staff Éclaireurs</option>
+                                    <option value="Pionniers">Le staff Pionniers</option>
+                                </select>
+                                <div id="destinataire-help" class="form-text">Si vous ne savez pas qui contacter, contactez l’animateur d’unité</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Votre message</label>
+                                <textarea id="message" class="form-control" rows="4"></textarea>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="abonnement-newsletter">
+                                <label class="form-check-label" for="abonnement-newsletter">Je souhaite recevoir la lettre d’information de l’unité</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-2 mb-5">
+                <div class="col-md-12">
+                </div>
+            </div>
+            
+        </div>
+    </article>
+    <footer class="mt-5">
+        <div class="bg-primary py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">L’unité fictive Sainte-Anne est membre de <a href="https://lesscouts.be/">Les Scouts ASBL</a></p>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://lesscouts.be/">
+                            <img src="../images/logos/logo_Federation_blanc_159x61.png" alt="Les Scouts asbl" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        Un peu de texte
+                    </div>
+                    <div class="col-md-3">
+                        Et ici aussi
+                    </div>
+                    <div class="col-md-3">
+                        Et pourquoi pas ceci encore
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col py-3">
+                    <p class="text-center text-ls-gris">
+                        &copy; Les Scouts asbl −
+                        <a href="https://lesscouts.be/mentions-legales/">Mentions légales</a> -
+                        <a href="https://lesscouts.be/vie-privee/">Vie privée</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Ici, on inclut le Javascript de Bootstrap depuis un CDN mais tu peux tout à fait l’inclure depuis une autre source -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

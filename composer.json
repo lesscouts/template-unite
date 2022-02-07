@@ -1,0 +1,14 @@
+{
+  "name": "lesscouts/template-unite",
+  "description": "Template pour les sites d’unité Les Scouts",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Les Scouts asbl",
+      "email": "webmaster@lesscouts.be"
+    }
+  ],
+  "require": {
+  }
+}
