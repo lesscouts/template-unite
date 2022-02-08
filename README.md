@@ -4,9 +4,16 @@
 
 Dans ce dépôt, tu trouveras :
 
-- des feuilles de styles CSS reposant sur [Bootstrap](https://getbootstrap.com/) qui intègrent la charte graphique des Scouts.
+- des feuilles de styles CSS reposant sur [Bootstrap](https://getbootstrap.com/) qui intègrent la charte graphique des Scouts
 - les polices recommandées
 - nos logos et images d’illustration
+
+## Documentation
+
+Pour savoir comment télécharger le template, l’ajouter à ton site et contribuer, continue la lecture ci-dessous.
+
+Si tu veux voir les possibilités offertes par le template et les exemples, 
+[consulte la documentation](https://template.lesscouts.be/).
 
 ## Qu’y a-t-il là-dedans ?
 
@@ -15,7 +22,7 @@ Les dossiers sont organisés comme suit :
 | Dossier         | Description                                                                         |
 |-----------------|-------------------------------------------------------------------------------------|
 | `css`           | Feuilles de styles CSS compilées à partir des feuilles de styles du dossier `scss`. |
-| `documentation` | C’est ici que tu trouveras la documentation des différentes choses proposées        |
+| `documentation` | Code source de la [documentation du template](https://template.lesscouts.be/))      |
 | `exemples`      | Quelques exemples de mise en œuvre du template                                      |
 | `fonts`         | Fichiers des polices utilisées par le template                                      |
 | `images`        | Logos et images d’illustration                                                      |
@@ -60,8 +67,8 @@ mettre à jour le template.
 
 ### Créer ta première page web
 
-Pour démarrer, recopie un exemple de page (voir le dossier `exemples/`) et mets-le à ta sauce ou pars d’une page blanche
-en recopiant ce squelette HTML :
+Pour démarrer, recopie un exemple de page (voir le dossier `exemples/` pour les sources 
+ou sur https://template.lesscouts.be/) et mets-le à ta sauce ou pars d’une page blanche en recopiant ce squelette HTML :
 
 ```html
 <!DOCTYPE html>
