@@ -9,11 +9,19 @@
   ],
   "license": "MIT",
   "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lesscouts/template-unite.git"
+  },
   "dependencies": {
     "bootstrap": "^5.1.3"
   },
   "scripts": {
     "compile-dev": "sass scss:css",
     "compile-prod": "sass scss:css --style compressed --no-source-map"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/lesscouts/template-unite/issues"
+  },
+  "homepage": "https://template.lesscouts.be/"
 }
