@@ -47,6 +47,8 @@ Plusieurs options de téléchargement sont possibles :
 
 - [télécharge le fichier zip](https://github.com/lesscouts/template-unite/releases/) de la version la plus récente du template
 - installe le template dans ton projet avec [composer](https://getcomposer.org/) : `composer require lesscouts/template-unite`
+- installe le template dans ton projet avec [npm](https://www.npmjs.com/) : `npm add @lesscouts/template-unite`
+- installe le template dans ton projet avec [yarn](https://yarnpkg.com/) : `yarn add @lesscouts/template-unite`
 - clone le dépôt git : `git clone https://github.com/lesscouts/template-unite.git`
 
 👉 La méthode la plus simple est de télécharger le fichier zip.
