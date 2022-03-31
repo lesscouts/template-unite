@@ -8,6 +8,14 @@ Dans ce dépôt, tu trouveras :
 - les polices recommandées
 - nos logos et images d’illustration
 
+## Ton avis nous intéresse !
+
+Tu as pu découvrir et peut-être déjà essayer le template pour ton site d’unité. 
+Cette première mouture s’adresse aux plus bricoleurs, c’est-à-dire la plupart des personnes qui s’occupent déjà 
+du site web d’unité. L’outil répond-il au besoin ? Faut-il aller plus loin ? Dis-le nous ci-dessous.
+
+➡ [Répondre au sondage](https://forms.office.com/r/tQjKg3Tep2) ⬅
+
 ## Documentation
 
 Pour savoir comment télécharger le template, l’ajouter à ton site et contribuer, continue la lecture ci-dessous.
