@@ -24,5 +24,7 @@
   },
   "homepage": "https://template.lesscouts.be/",
   "main": "index.html",
-  "devDependencies": {}
+  "devDependencies": {
+    "sass": "^1.56.1"
+  }
 }
