@@ -30,8 +30,11 @@
                         <a href="https://lesscouts.be/" target="_blank" title="Aller sur le site de la fédération Les Scouts">
                             <i class="bi-chevron-left"></i> Les Scouts asbl
                         </a>
-						
+					 <div class="header-search">
+			<?php get_search_form(); ?>
+        </div>
                     </div>
+					
 					        
                 </div>
             </div>
@@ -84,3 +87,12 @@
             </div>
         </div>
     </header>
+	<?php 
+	
+	if(is_search()) {
+  // ...
+} else { ?>
+	<h5 style="padding-left: 10px;"><?php bloginfo( "description" ); ?> </h5> <?php
+}
+	
+	?>

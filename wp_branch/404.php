@@ -13,7 +13,7 @@ get_header(); ?>
 <article>
 <div class="bg-primary">
             <div class="container">
-                <div class="row topping-federation topping-white topping-bottom-overflow topping-right topping-large">
+                <div class="row topping-federation topping-white topping-bottom-overflow topping-right topping-large bg-topping-opacity-10">
                     <div class="col-11 offset-md-1 pb-5 mt-5">
                         <h1 class="mb-4 mt-5">404</h1>
                         <div class="pb-5">

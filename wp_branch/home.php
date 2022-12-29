@@ -9,15 +9,11 @@
 
 get_header(); ?>
 
-<h5><?php bloginfo( 'description' ); ?></h5>
-
  
-    
-
 <article>
         <div class="bg-primary">
             <div class="container">
-                <div class="row topping-federation topping-white topping-bottom-overflow topping-right topping-large">
+                <div class="row topping-federation topping-white topping-bottom-overflow topping-right topping-large bg-topping-opacity-30">
                     <div class="col-11 offset-md-1 pb-5 mt-5">
                         <h1 class="mb-4 mt-5"><?php bloginfo( 'name' ); ?></h1>
 						

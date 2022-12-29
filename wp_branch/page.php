@@ -38,7 +38,7 @@ get_header(); ?>
         <div class="container mb-5">
             
             <div class="row mt-5">
-                <div class="col-md-12 topping-federation topping-top topping-right topping-large  mb-5">
+                <div class="col-md-12 topping-federation topping-top topping-right topping-large  mb-5 bg-topping-opacity-50">
                     <div class="above-topping">
                         <p><?php the_content(); ?></p>
                     </div>
